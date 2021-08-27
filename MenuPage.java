@@ -1,6 +1,6 @@
 package me.itsadrift.pagedmenu;
 
-import me.itsadrift.pagedmenu.menu.MenuButton;
+import me.itsadrift.pagedmenu.MenuButton;
 
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Inventory;
