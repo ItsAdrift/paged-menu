@@ -1,4 +1,4 @@
-package me.itsadrift.mooseclub.utils;
+package me.itsadrift.pagedmenu;
 
 import java.util.ArrayList;
 import java.util.Arrays;
