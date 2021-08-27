@@ -1,7 +1,5 @@
-package me.itsadrift.mooseclub.menu.paged;
+package me.itsadrift.pagedmenu;
 
-import me.itsadrift.mooseclub.menu.Menu;
-import me.itsadrift.mooseclub.menu.MenuManager;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
