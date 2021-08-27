@@ -1,4 +1,4 @@
-package me.itsadrift.mooseclub.menu.paged;
+package me.itsadrift.pagedmenu;
 
 import java.util.HashMap;
 import java.util.Map;
