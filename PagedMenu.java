@@ -1,8 +1,8 @@
-package me.itsadrift.mooseclub.menu.paged;
+package me.itsadrift.pagedmenu;
 
-import me.itsadrift.mooseclub.menu.Menu;
-import me.itsadrift.mooseclub.menu.MenuButton;
-import me.itsadrift.mooseclub.utils.HexUtils;
+import me.itsadrift.pagedmenu.Menu;
+import me.itsadrift.pagedmenu.MenuButton;
+
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
@@ -155,17 +155,21 @@ public class PagedMenu {
     private ItemStack[] getArrows() {
         ItemStack skullLeft = new ItemStack(Material.PLAYER_HEAD);
         SkullMeta leftMeta = (SkullMeta) skullLeft.getItemMeta();
-        leftMeta.setDisplayName(HexUtils.colour("&c&lGo Back"));
+        leftMeta.setDisplayName(colour("&c&lGo Back"));
         leftMeta.setOwner("MHF_ArrowLeft");
         skullLeft.setItemMeta(leftMeta);
 
         ItemStack skullRight = new ItemStack(Material.PLAYER_HEAD);
         SkullMeta skullMeta = (SkullMeta) skullRight.getItemMeta();
         skullMeta.setOwner("MHF_ArrowRight");
-        skullMeta.setDisplayName(HexUtils.colour("&a&lNext"));
+        skullMeta.setDisplayName(colour("&a&lNext"));
         skullRight.setItemMeta(skullMeta);
 
         return new ItemStack[]{skullLeft, skullRight};
+    }
+
+    private String colour(String s) {
+        return ChatColor.translateAlternateColorCodes('&', s);
     }
 
 }
