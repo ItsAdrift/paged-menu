@@ -1,6 +1,5 @@
-package me.itsadrift.pagedmenu
+package me.itsadrift.pagedmenu;
 
-import me.itsadrift.pagedmenu.utils.ItemBuilder;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
@@ -17,10 +16,6 @@ public class MenuButton {
      */
     public MenuButton(ItemStack itemStack) {
         this.itemStack = itemStack;
-    }
-
-    public MenuButton(ItemBuilder builder) {
-        this.itemStack = builder.build();
     }
 
     /*
