@@ -1,8 +1,5 @@
 package me.itsadrift.mooseclub.menu.paged;
 
-import me.itsadrift.mooseclub.menu.Menu;
-import me.itsadrift.mooseclub.menu.MenuManager;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
